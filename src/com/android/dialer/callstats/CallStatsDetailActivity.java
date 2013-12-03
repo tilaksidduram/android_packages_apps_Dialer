@@ -252,10 +252,6 @@ public class CallStatsDetailActivity extends Activity {
         startActivity(new Intent(Intent.ACTION_DIAL, CallUtil.getCallUri(mNumber)));
     }
 
-    public void onMenuAddToBlacklist(MenuItem menuItem) {
-        mContactInfoHelper.addNumberToBlacklist(mNumber);
-    }
-
     private void configureActionBar() {
         ActionBar actionBar = getActionBar();
         if (actionBar != null) {
